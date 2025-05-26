@@ -36,8 +36,6 @@ Membuat sistem monitoring gudang secara real-time yang melakukan record data suh
 - Install Prasyarat
 - Start Kafka dan Zookeeper di dua terminal yang berbeda
 
-`// Start Zookeeper (di terminal pertama)
-brew services start zookeeper`
+`brew services start zookeeper`
 
-`// Start Kafka (di terminal kedua atau background)
-brew services start kafka`
+`brew services start kafka`
