@@ -39,3 +39,16 @@ Membuat sistem monitoring gudang secara real-time yang melakukan record data suh
 `brew services start zookeeper`
 
 `brew services start kafka`
+***
+### Soal
+#### 1. Buat Topik Kafka
+Buat dua topik di Apache Kafka:
+- sensor-suhu-gudang
+- sensor-kelembaban-gudang
+
+![Screenshot 2025-05-27 at 00 40 07](https://github.com/user-attachments/assets/c5f5127f-66dd-49cf-bd36-e8a6e32b8ef5)
+
+```
+docker exec -it kafka kafka-topics --create --topte sensor-suhu-gudang --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+docker exec -it kafka kafka-topcs --create --tople sensor-kelembaban-gudang --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+```
