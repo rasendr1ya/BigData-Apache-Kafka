@@ -110,6 +110,7 @@ while True:
 ***
 #### 3. Olah Data dengan PySpark
 - Buat PySpark Consumer
+
 ![Screenshot 2025-05-27 at 01 55 16](https://github.com/user-attachments/assets/82bc038c-4643-4a7d-9db5-d64b74e60fa0)
 ```
 //Include Filtering (Nomor 3B)
@@ -304,6 +305,6 @@ except KeyboardInterrupt:
     spark.stop()
 ```
 #### Output
-![Screenshot 2025-05-27 at 02 25 43](https://github.com/user-attachments/assets/46ee5794-9b06-4407-9504-be1b6b9574a5)
+![Screenshot 2025-05-27 at 04 09 50](https://github.com/user-attachments/assets/a66675af-0ede-4052-8706-b958310552f3)
 
 
