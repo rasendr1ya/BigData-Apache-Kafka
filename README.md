@@ -190,7 +190,7 @@ query_kelembapan.awaitTermination()
 - Lakukan Filtering
 ![Screenshot 2025-05-27 at 02 22 25](https://github.com/user-attachments/assets/cabc80fb-9746-4112-b59b-3c212559ea32)
 ***
-#### Gabungkan Stream dari Dua Sensor
+#### 4. Gabungkan Stream dari Dua Sensor
 ```
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_json, col, expr, window, when, concat, lit
@@ -304,7 +304,11 @@ except KeyboardInterrupt:
     query.stop()
     spark.stop()
 ```
-#### Output
+##### Output
 ![Screenshot 2025-05-27 at 04 09 50](https://github.com/user-attachments/assets/a66675af-0ede-4052-8706-b958310552f3)
+***
+#### 4C. Buat Peringatan Gabungan
+Jika ditemukan suhu > 80°C dan kelembaban > 70% pada gudang yang sama, tampilkan peringatan kritis.
 
-
+![Screenshot 2025-05-27 at 04 10 26](https://github.com/user-attachments/assets/fc0780d1-92dd-4e16-a44b-9425c93209ca)
+***
